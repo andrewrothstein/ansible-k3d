@@ -1,0 +1,26 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: download...
+  become: yes
+  become_user: root
+  get_url:
+    url: '{{ k3d_url }}'
+    dest: '{{ k3d_installed_exe }}'
+    checksum: '{{ k3d_checksum }}'
+    mode: 0755
+- name: link
+  become: yes
+  become_user: root
+  file:
+    src: '{{ k3d_installed_exe }}'
+    dest: '{{ k3d_link }}'
+    state: link
