@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
+set -e
 DIR=~/Downloads
 MIRROR=https://github.com/rancher/k3d/releases/download
 APP=k3d
+
 
 dl()
 {
@@ -24,7 +26,7 @@ dl()
 
 dlver () {
     local ver=$1
-    printf "  '%s':\n" $ver
+    printf "  %s:\n" $ver
     dl $ver darwin amd64
     dl $ver linux amd64
     dl $ver linux 386
@@ -33,4 +35,4 @@ dlver () {
     dl $ver windows amd64 .exe
 }
 
-dlver ${1:-v1.7.0}
+dlver ${1:-v3.0.0}
