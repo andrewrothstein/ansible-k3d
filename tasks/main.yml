@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: download...
+- name: downloaded {{ k3d_url }}...
   become: yes
   become_user: root
   get_url:
@@ -17,7 +17,7 @@
     dest: '{{ k3d_installed_exe }}'
     checksum: '{{ k3d_checksum }}'
     mode: 0755
-- name: link
+- name: linking {{ k3d_link }} to {{ k3d_installed_exe }}...
   become: yes
   become_user: root
   file:
