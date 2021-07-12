@@ -1,6 +1,6 @@
 ---
 # defaults file for k3d
-k3d_ver: v4.4.6
+k3d_ver: v4.4.7
 k3d_mirror: https://github.com/rancher/k3d/releases/download
 k3d_os: linux
 k3d_arch: amd64
@@ -357,3 +357,16 @@ k3d_checksums:
     linux-arm64: sha256:567e18a59408f9f9fe2b2dd0b727955e3abe96ba2742f08695f702f2692a7605
     # https://github.com/rancher/k3d/releases/download/v4.4.6/k3d-windows-amd64.exe
     windows-amd64: sha256:4a0530079d6cbad63d6f83e60d14d0529fd274570be4f55e6e7b4e529df8b051
+  v4.4.7:
+    # https://github.com/rancher/k3d/releases/download/v4.4.7/k3d-darwin-amd64
+    darwin-amd64: sha256:cb0163b925d6def5c6205a0ea30968a285a0b4516ef7b5d1653d4e3af1387a13
+    # https://github.com/rancher/k3d/releases/download/v4.4.7/k3d-linux-amd64
+    linux-amd64: sha256:51731ffb2938c32c86b2de817c7fbec8a8b05a55f2e4ab229ba094f5740a0f60
+    # https://github.com/rancher/k3d/releases/download/v4.4.7/k3d-linux-386
+    linux-386: sha256:91d30912fbc9840ccedbfccfcca924dc69f925a8cbb1bd53a5422c30696013dc
+    # https://github.com/rancher/k3d/releases/download/v4.4.7/k3d-linux-arm
+    linux-arm: sha256:3c1cad46dea4dda4fe19fc2d862e5e97c12f4d129528a67507539f2ea0f65649
+    # https://github.com/rancher/k3d/releases/download/v4.4.7/k3d-linux-arm64
+    linux-arm64: sha256:0c6923d4ca57d1db31f764d3eaf2a6e488b62fb96795d4d4b522a445245b3e01
+    # https://github.com/rancher/k3d/releases/download/v4.4.7/k3d-windows-amd64.exe
+    windows-amd64: sha256:130d8dab639f6152e7d3cf7c4144bc31cd52de87c64a2aaa6e2678e1b9041b2a
