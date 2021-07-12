@@ -1,6 +1,6 @@
 andrewrothstein.k3d
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-k3d.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-k3d)
+![Build Status](https://github.com/andrewrothstein/ansible-k3d/actions/workflows/build.yml/badge.svg)
 
 Installs [k3d](https://github.com/rancher/k3d).
 
