@@ -17,7 +17,7 @@ dl()
 
     if [ ! -e $lfile ];
     then
-        wget -q -O $lfile $url
+        curl -sSLf -o $lfile $url
     fi
 
     printf "    # %s\n" $url
@@ -28,6 +28,7 @@ dlver () {
     local ver=$1
     printf "  %s:\n" $ver
     dl $ver darwin amd64
+    dl $ver darwin arm64
     dl $ver linux amd64
     dl $ver linux 386
     dl $ver linux arm
@@ -35,4 +36,4 @@ dlver () {
     dl $ver windows amd64 .exe
 }
 
-dlver ${1:-v5.3.0}
+dlver ${1:-v5.4.0}
