@@ -1,5 +1,7 @@
 ---
 # vars file for k3d
+k3d_os: '{{ ansible_system | lower }}'
+k3d_arch: '{{ k3d_arch_map[ansible_architecture] }}'
 k3d_platform: '{{ k3d_os }}-{{ k3d_arch }}'
 k3d_url: '{{ k3d_mirror }}/{{ k3d_ver }}/k3d-{{ k3d_platform }}'
 k3d_checksum: '{{ k3d_checksums[k3d_ver][k3d_platform] }}'
