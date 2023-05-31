@@ -15,22 +15,20 @@ galaxy_info:
         - all
     - name: Debian
       versions:
+        - bookworm
         - bullseye
-        - buster
     - name: EL
       versions:
         - 8
         - 9
     - name: Fedora
       versions:
-        - 36
         - 37
+        - 38
     - name: Ubuntu
       versions:
-        - bionic
         - focal
+        - jammy
   galaxy_tags:
     - development
   role_name: k3d
-
-dependencies: []
