@@ -1,6 +1,6 @@
 ---
 # defaults file for k3d
-k3d_ver: v5.8.1
+k3d_ver: v5.8.2
 k3d_mirror: https://github.com/k3d-io/k3d/releases/download
 k3d_arch_map:
   386: 386
@@ -785,3 +785,19 @@ k3d_checksums:
     linux-arm64: sha256:a0b73a2ca6a85688e53eb17b5d7dc5bab97280317668d81e6511b1b73e33a79d
     # https://github.com/k3d-io/k3d/releases/download/v5.8.1/k3d-windows-amd64.exe
     windows-amd64: sha256:47f9750a78003a008848cabf2e18d4438ffb9ede30e9648765799cfa4ff05148
+  # https://github.com/k3d-io/k3d/releases/download/v5.8.2/checksums.txt
+  v5.8.2:
+    # https://github.com/k3d-io/k3d/releases/download/v5.8.2/k3d-darwin-amd64
+    darwin-amd64: sha256:51fcb8208408bca3d476679a1a673fe47820cf134b650ef4583d710316896a1f
+    # https://github.com/k3d-io/k3d/releases/download/v5.8.2/k3d-darwin-arm64
+    darwin-arm64: sha256:72d488935c962ff8c01708e288f426e78e05df34b14062e8fdd4e9f6661cd378
+    # https://github.com/k3d-io/k3d/releases/download/v5.8.2/k3d-linux-amd64
+    linux-amd64: sha256:7e92e883f2457aa8702f9f504a772fadec3ef3f9d678f929b2b8e05f3910a30c
+    # https://github.com/k3d-io/k3d/releases/download/v5.8.2/k3d-linux-386
+    linux-386: sha256:b86020ea344357f7c0459ddbaf38bdf310c5686bca6de0d94cefe1a2b1b89cde
+    # https://github.com/k3d-io/k3d/releases/download/v5.8.2/k3d-linux-arm
+    linux-arm: sha256:62dc7eb8bcfe499d7163226668577c56ed8b85659ce3bcdecca686ee68c990ba
+    # https://github.com/k3d-io/k3d/releases/download/v5.8.2/k3d-linux-arm64
+    linux-arm64: sha256:8134a7047afb3ed7aa32b7a967bc299dbe3abe640bab27fc9d2c9328b2361bbf
+    # https://github.com/k3d-io/k3d/releases/download/v5.8.2/k3d-windows-amd64.exe
+    windows-amd64: sha256:b4169fffb9cd3342eb1b0556e86a3f8d49edcc975bf858d02c162ec91ba7bf8f

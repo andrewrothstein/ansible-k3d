@@ -41,4 +41,4 @@ dlver () {
     dl $lchecksums $ver windows amd64 .exe
 }
 
-dlver ${1:-v5.8.1}
+dlver ${1:-v5.8.2}
